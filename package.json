@@ -2,6 +2,9 @@
   "name": "git_commit_0219",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -20,11 +23,18 @@
     "commitlint": "commitlint --config commitlint.config.js -e -V",
     "commit": "git-cz"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "devDependencies": {
+    "@commitlint/cli": "^18.6.1",
+    "@commitlint/config-conventional": "^18.6.2",
+    "@commitlint/cz-commitlint": "^18.6.1",
+    "commitizen": "^4.3.0",
+    "inquirer": "^8.2.6",
+    "husky": "^8.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
   },
   "browserslist": {
     "production": [
@@ -37,18 +47,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^18.6.1",
-    "@commitlint/config-conventional": "^18.6.2",
-    "@commitlint/cz-commitlint": "^18.6.1",
-    "commitizen": "^4.3.0",
-    "husky": "^8.0.0",
-    "inquirer": "^8.2.6"
-  },
-  "config": {
-    "commitizen": {
-      "path": "@commitlint/cz-commitlint"
-    }
   }
 }
