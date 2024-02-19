@@ -33,6 +33,7 @@ module.exports = {
                 'workflow',   // 工作流改進
                 'types',      // 類型修改
                 'release',
+                'update'
             ],
         ],
         'scope-empty': [2, 'never'],
